@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="mode-selector">
+      <button id="modo-cronometro" class="active">Cronômetro</button>
+      <button id="modo-timer">Timer</button>
+    </div>
+
+    <div id="timer-wrapper">
+      <button id="decrease-time" aria-label="Diminuir tempo">➖</button>
+
+      <div id="timer">
+        <span id="hours" contenteditable="true" inputmode="numeric">00</span>
+        <span class="doispontos">:</span>
+        <span id="minutes" contenteditable="true" inputmode="numeric">00</span>
+        <span class="doispontos">:</span>
+        <span id="seconds" contenteditable="true" inputmode="numeric">00</span>
+      </div>
+
+      <button id="increase-time" aria-label="Aumentar tempo">➕</button>
+    </div>
+
+    <div id="buttons">
+      <button class="play" aria-label="Iniciar">▶️</button>
+      <button class="pause" aria-label="Pausar">⏸️</button>
+      <button class="stop" aria-label="Parar">⏹️</button>
+    </div>
+
+    <rodape id="rodape">
+      <p>Criado por Marcos Anjos Silva - <a id="socialmedia" href="https://www.instagram.com/marcosajx_" target="_blank" rel="noopener noreferrer">@marcosajx_</a></p>
+    </rodape>
+
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
