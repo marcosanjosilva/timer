@@ -2,48 +2,51 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%25%22 y=%2255%25%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 font-size=%2280%22>⏲️</text></svg>">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="container">
+    <div id="container">
 
-    <div class="mode-selector">
-      <button id="modo-cronometro" class="active">Cronômetro</button>
-      <button id="modo-timer">Timer</button>
+        <div class="mode-selector">
+            <button id="modo-cronometro" class="active">Cronômetro</button>
+            <button id="modo-timer">Timer</button>
+        </div>
+
+        <div id="timer-wrapper">
+            <button id="decrease-time" aria-label="Diminuir tempo">➖</button>
+
+            <div id="timer">
+                <span id="hours" contenteditable="true" inputmode="numeric">00</span>
+                <span class="doispontos">:</span>
+                <span id="minutes" contenteditable="true" inputmode="numeric">00</span>
+                <span class="doispontos">:</span>
+                <span id="seconds" contenteditable="true" inputmode="numeric">00</span>
+            </div>
+
+            <button id="increase-time" aria-label="Aumentar tempo">➕</button>
+        </div>
+
+        <div id="buttons">
+            <button class="play" aria-label="Iniciar">▶️</button>
+            <button class="pause" aria-label="Pausar">⏸️</button>
+            <button class="stop" aria-label="Parar">⏹️</button>
+        </div>
+
+        <rodape id="rodape">
+            <p>Criado por Marcos Anjos Silva - <a id="socialmedia" href="https://www.instagram.com/marcosajx_"
+                    target="_blank" rel="noopener noreferrer">@marcosajx_</a></p>
+        </rodape>
+
     </div>
 
-    <div id="timer-wrapper">
-      <button id="decrease-time" aria-label="Diminuir tempo">➖</button>
-
-      <div id="timer">
-        <span id="hours" contenteditable="true" inputmode="numeric">00</span>
-        <span class="doispontos">:</span>
-        <span id="minutes" contenteditable="true" inputmode="numeric">00</span>
-        <span class="doispontos">:</span>
-        <span id="seconds" contenteditable="true" inputmode="numeric">00</span>
-      </div>
-
-      <button id="increase-time" aria-label="Aumentar tempo">➕</button>
-    </div>
-
-    <div id="buttons">
-      <button class="play" aria-label="Iniciar">▶️</button>
-      <button class="pause" aria-label="Pausar">⏸️</button>
-      <button class="stop" aria-label="Parar">⏹️</button>
-    </div>
-
-    <rodape id="rodape">
-      <p>Criado por Marcos Anjos Silva - <a id="socialmedia" href="https://www.instagram.com/marcosajx_" target="_blank" rel="noopener noreferrer">@marcosajx_</a></p>
-    </rodape>
-
-  </div>
-
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
