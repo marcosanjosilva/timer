@@ -1,1 +1,1 @@
-# timer
+# Esse é um projeto teste, criado apenas para testar algumas coisas aprendidas em HTML, CSS e JS.
